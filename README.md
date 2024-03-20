@@ -3,7 +3,7 @@
 <h1>EfficientVMamba </h1>
 <h3>EfficientVMamba: Atrous Selective Scan for Light Weight Visual Mamba</h3>
 
-[Xiaohuan Pei](https://github.com/TerryPei/EfficientVMamba)<sup>1</sup>,[Tao Huang](https://github.com/hunto/)<sup>1</sup>,[Chang Xu](https://scholar.google.com.hk/citations?user=tStQNm4AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>
+[Xiaohuan Pei](https://github.com/TerryPei/EfficientVMamba)<sup>1</sup>,[Tao Huang](https://github.com/hunto/)<sup>1</sup>,Chang Xu<sup>1</sup>
 
 <sup>1</sup>  University of Sydney 
 
