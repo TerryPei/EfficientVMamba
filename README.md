@@ -3,24 +3,32 @@
 <h1>EfficientVMamba </h1>
 <h3>EfficientVMamba: Atrous Selective Scan for Light Weight Visual Mamba</h3>
 
-[Xiaohuan Pei](https://github.com/TerryPei/EfficientVMamba)<sup>1</sup>,[Tao Huang](https://github.com/hunto/)<sup>1</sup>,[Chang Xu](https://scholar.google.com.hk/citations?user=tStQNm4AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, 
+[Xiaohuan Pei](https://github.com/TerryPei/EfficientVMamba)<sup>1</sup>,[Tao Huang](https://github.com/hunto/)<sup>1</sup>,[Chang Xu](https://scholar.google.com.hk/citations?user=tStQNm4AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>
 
 <sup>1</sup>  University of Sydney 
 
 Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2403.09977))
 
+<p align='center'>
+<img src='./assests/scan.png' alt='mask' width='1000px'>
+</p>
 
 </div>
 
 ## Updates
-* **` Mar. 20th, 2024`:** Will published in several days.
-
+* **` Mar. 20th, 2024`:** Code will be published in several days.
 
 
 
 ## Abstract
 
 Prior efforts in light-weight model development mainly centered on CNN and Transformer-based designs yet faced persistent challenges. CNNs adept at local feature extraction compromise resolution while Transformers offer global reach but escalate computational demands $\mathcal{O}(N^2)$. This ongoing trade-off between accuracy and efficiency remains a significant hurdle. Recently, state space models (SSMs), such as Mamba, have shown outstanding performance and competitiveness in various tasks such as language modeling and computer vision, while reducing the time complexity of global information extraction to $\mathcal{O}(N)$. Inspired by this, this work proposes to explore the potential of visual state space models in light-weight model design and introduce a novel efficient model variant dubbed EfficientVMamba. Concretely, our EfficientVMamba integrates a atrous-based selective scan approach by efficient skip sampling, constituting building blocks designed to harness both global and local representational features. Additionally, we investigate the integration between SSM blocks and convolutions, and introduce an efficient visual state space block combined with an additional convolution branch, which further elevate the model performance. Experimental results show that, EfficientVMamba scales down the computational complexity while yields competitive results across a variety of vision tasks. For example, our EfficientVMamba-S with $1.3$G FLOPs improves Vim-Ti with $1.5$G FLOPs by a large margin of $5.6\%$ accuracy on ImageNet. Code is available at: \url{https://github.com/TerryPei/EfficientVMamba}.
+
+
+## Introduction
+<p align='center'>
+<img src='./assests/arch.png' alt='mask' width='1000px'>
+</p>
 
 <!-- ## Overview
 
