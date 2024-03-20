@@ -16,6 +16,9 @@ Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2403.09977))
 </div>
 
 ## Updates
+
+* **` Mar. 20th, 2024`:** Release training code for classification, working on updating to accelerate version.
+
 * **` Mar. 20th, 2024`:** Code will be published in several days.
 
 
