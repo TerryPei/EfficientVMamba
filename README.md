@@ -51,8 +51,7 @@ We will release all the pre-trained models/logs in few days.
 
 | name | pretrain | resolution |acc@1 | #params | FLOPs | checkpoints/logs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| EfficientVMamba-T | ImageNet-1K | 224x224 | 76.5 | 6M | 0.8G | [-]/[[log]](https://github.com/TerryPei/EfficientVMamba/releases/tag/v1.0.0/log_efficient_vmamba_tiny.txt)
-|
+| EfficientVMamba-T | ImageNet-1K | 224x224 | 76.5 | 6M | 0.8G | [-]/[[log]](https://github.com/TerryPei/EfficientVMamba/releases/tag/v1.0.0/log_efficient_vmamba_tiny.txt)|
 | EfficientVMamba-S | ImageNet-1K | 224x224 | 78.7 | 11M | 1.3G | [-]/[[log]](https://github.com/TerryPei/EfficientVMamba/releases/tag/v1.0.0/log_efficient_vmamba_small.txt)|
 | EfficientVMamba-B | ImageNet-1K | 224x224 | 81.8 | 33M | 4.0G | [-]/[[log]](https://github.com/TerryPei/EfficientVMamba/releases/tag/v1.0.0/log_efficient_vmamba_base.txt)|
 
