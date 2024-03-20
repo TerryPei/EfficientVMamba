@@ -144,8 +144,8 @@ For detection and segmentation tasks, follow similar steps using the appropriate
 ```
 
 ## Acknowledgment
-This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), 
-This project is based on Mamba [paper](https://arxiv.org/abs/2312.00752), [code](https://github.com/state-spaces/mamba)), Swin-Transformer ([paper](https://arxiv.org/pdf/2103.14030.pdf), [code](https://github.com/microsoft/Swin-Transformer)), ConvNeXt ([paper](https://arxiv.org/abs/2201.03545), [code](https://github.com/facebookresearch/ConvNeXt)), [OpenMMLab](https://github.com/open-mmlab),
+This project is based on VMamba [paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)
+, Mamba [paper](https://arxiv.org/abs/2312.00752), [code](https://github.com/state-spaces/mamba), Swin-Transformer ([paper](https://arxiv.org/pdf/2103.14030.pdf), [code](https://github.com/microsoft/Swin-Transformer)), ConvNeXt ([paper](https://arxiv.org/abs/2201.03545), [code](https://github.com/facebookresearch/ConvNeXt)), [OpenMMLab](https://github.com/open-mmlab),
 and the `analyze/get_erf.py` is adopted from [replknet](https://github.com/DingXiaoH/RepLKNet-pytorch/tree/main/erf), thanks for their excellent works.
 
 ## License  
