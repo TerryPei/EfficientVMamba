@@ -1312,15 +1312,3 @@ class Backbone_EfficientVSSM(EfficientVSSM):
         
         return outs
 
-
-@register_model
-def mobile_vssm_fusion_tiny(*args, drop_path_rate=0.1, **kwargs):
-    return EfficientVSSM(dims=[96, 192, 384, 768], depths=[2, 2, 9, 2], d_state=16, mlp_ratio=0, downsample_version='v1', drop_path_rate=drop_path_rate)
-
-@register_model
-def mobile_vssm_fusion_micro(*args, drop_path_rate=0.1, **kwargs):
-    return EfficientVSSM(dims=[64, 128, 256, 512], depths=[2, 2, 4, 2], d_state=16, mlp_ratio=0, downsample_version='v1', drop_path_rate=drop_path_rate)
-
-@register_model
-def mobile_vssm_fusion_nano(*args, drop_path_rate=0.1, **kwargs):
-    return EfficientVSSM(dims=[48, 96, 192, 384], depths=[2, 2, 4, 2], d_state=16, mlp_ratio=0, downsample_version='v1', drop_path_rate=drop_path_rate)
