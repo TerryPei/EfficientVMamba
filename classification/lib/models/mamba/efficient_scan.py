@@ -1,5 +1,7 @@
 import torch
 import math
+import torch.nn as nn
+import torch.nn.functional as F
 
 class EfficientScan(torch.autograd.Function):
     # [B, C, H, W] -> [B, 4, C, H * W] (original)
