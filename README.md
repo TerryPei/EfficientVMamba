@@ -146,9 +146,13 @@ For detection and segmentation tasks, follow similar steps using the appropriate
 
 
 ## Citation
-
+If this paper helps your research, please consider citing our work:
 ```
-@article{
+@article{pei2024efficientvmamba,
+  title={EfficientVMamba: Atrous Selective Scan for Light Weight Visual Mamba},
+  author={Pei, Xiaohuan and Huang, Tao and Xu, Chang},
+  journal={arXiv preprint arXiv:2403.09977},
+  year={2024}
 }
 ```
 
