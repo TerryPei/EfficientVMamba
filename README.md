@@ -16,7 +16,7 @@ Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2403.09977))
 </div>
 
 ## Updates
-* **` Mar. 29th, 2024`:** Release training code for detetection, working on re-training to accelerate version.
+* **` Mar. 29th, 2024`:** Release training code for detection, working on re-training on accelerate version.
 
 * **` Mar. 20th, 2024`:** Release training code for classification, working on updating to accelerate version.
 
