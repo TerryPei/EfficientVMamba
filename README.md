@@ -16,6 +16,8 @@ Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2403.09977))
 </div>
 
 ## Updates
+* **` Apr. 16th, 2024`:** Release Checkpoints.
+
 * **` Mar. 29th, 2024`:** Release training code for detection, working on re-training on accelerate version.
 
 * **` Mar. 20th, 2024`:** Release training code for classification, working on updating to accelerate version.
@@ -26,7 +28,7 @@ Paper: ([arXiv 2401.10166](https://arxiv.org/abs/2403.09977))
 
 ## Abstract
 
-Prior efforts in light-weight model development mainly centered on CNN and Transformer-based designs yet faced persistent challenges. CNNs adept at local feature extraction compromise resolution while Transformers offer global reach but escalate computational demands $\mathcal{O}(N^2)$. This ongoing trade-off between accuracy and efficiency remains a significant hurdle. Recently, state space models (SSMs), such as Mamba, have shown outstanding performance and competitiveness in various tasks such as language modeling and computer vision, while reducing the time complexity of global information extraction to $\mathcal{O}(N)$. Inspired by this, this work proposes to explore the potential of visual state space models in light-weight model design and introduce a novel efficient model variant dubbed EfficientVMamba. Concretely, our EfficientVMamba integrates an atrous-based selective scan approach by efficient skip sampling, constituting building blocks designed to harness both global and local representational features. Additionally, we investigate the integration between SSM blocks and convolutions, and introduce an efficient visual state space block combined with an additional convolution branch, which further elevate the model performance. Experimental results show that, EfficientVMamba scales down the computational complexity while yields competitive results across a variety of vision tasks. For example, our EfficientVMamba-S with $1.3$G FLOPs improves Vim-Ti with $1.5$G FLOPs by a large margin of $5.6\%$ accuracy on ImageNet. Code is available at: [https://github.com/TerryPei/EfficientVMamba].
+Prior efforts in light-weight model development mainly centered on CNN and Transformer-based designs yet faced persistent challenges. CNNs adept at local feature extraction compromise resolution while Transformers offer global reach but escalate computational demands $\mathcal{O}(N^2)$. This ongoing trade-off between accuracy and efficiency remains a significant hurdle. Recently, state space models (SSMs), such as Mamba, have shown outstanding performance and competitiveness in various tasks such as language modeling and computer vision, while reducing the time complexity of global information extraction to $\mathcal{O}(N)$. Inspired by this, this work proposes to explore the potential of visual state space models in light-weight model design and introduce a novel efficient model variant dubbed EfficientVMamba. Concretely, our EfficientVMamba integrates a atrous-based selective scan approach by efficient skip sampling, constituting building blocks designed to harness both global and local representational features. Additionally, we investigate the integration between SSM blocks and convolutions, and introduce an efficient visual state space block combined with an additional convolution branch, which further elevate the model performance. Experimental results show that, EfficientVMamba scales down the computational complexity while yields competitive results across a variety of vision tasks. For example, our EfficientVMamba-S with $1.3$G FLOPs improves Vim-Ti with $1.5$G FLOPs by a large margin of $5.6\%$ accuracy on ImageNet. Code is available at: [Link](https://github.com/TerryPei/EfficientVMamba).
 
 
 ## Introduction
@@ -63,24 +65,9 @@ We will release all the pre-trained models/logs in few days.
 
 | name | pretrain | resolution |acc@1 | #params | FLOPs | checkpoints/logs |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| EfficientVMamba-T | ImageNet-1K | 224x224 | 76.5 | 6M | 0.8G | [-]/[[log]](https://github.com/TerryPei/EfficientVMamba/releases/download/v1.0.0/log_efficient_vmamba_tiny.txt)|
-| EfficientVMamba-S | ImageNet-1K | 224x224 | 78.7 | 11M | 1.3G | [-]/[[log]](https://github.com/TerryPei/EfficientVMamba/releases/download/v1.0.0/log_efficient_vmamba_small.txt)|
-| EfficientVMamba-B | ImageNet-1K | 224x224 | 81.8 | 33M | 4.0G | [-]/[[log]](https://github.com/TerryPei/EfficientVMamba/releases/download/v1.0.0/log_efficient_vmamba_base.txt)|
-
-
-
-
-
-* **Object Detection on COCO**
-  
-| Backbone | #params | FLOPs | Detector | box mAP | mask mAP | checkpoints/logs |
-| :---: | :---: | :---: | :---: | :---: | :---: |:---: |
-
-
-* **Semantic Segmentation on ADE20K**
-
-| Backbone | Input|  #params | FLOPs | Segmentor | mIoU | checkpoints/logs |
-| :---: | :---: | :---: | :---: | :---: | :---: |:---: |
+| EfficientVMamba-T | ImageNet-1K | 224x224 | 76.5 | 6M | 0.8G | [[ckpt](https://huggingface.co/TerryPei/EfficientVMamba-Tiny/tree/main)]/[[log](https://github.com/TerryPei/EfficientVMamba/releases/download/v1.0.0/log_efficient_vmamba_tiny.txt)]|
+| EfficientVMamba-S | ImageNet-1K | 224x224 | 78.7 | 11M | 1.3G | [[ckpt](https://huggingface.co/TerryPei/EfficientVMamba-Small/tree/main)]/[[log](https://github.com/TerryPei/EfficientVMamba/releases/download/v1.0.0/log_efficient_vmamba_small.txt)]|
+| EfficientVMamba-B | ImageNet-1K | 224x224 | 81.8 | 33M | 4.0G | [[ckpt](https://huggingface.co/TerryPei/EfficientVMamba-Base/tree/main)]/[[log](https://github.com/TerryPei/EfficientVMamba/releases/download/v1.0.0/log_efficient_vmamba_base.txt)]|
 
 
 ## Getting Started
